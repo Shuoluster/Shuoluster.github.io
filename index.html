@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<link rel="stylesheet" href="css/index_style.css">
+	<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/magicText_style.css">
+	<!--source code-->
+	<script src="scripts/index/ex1.js"></script>
+	<!--library-->
+</head>
+<body>
+	
+	<div style="display:none; overflow:hidden;">
+     <img id="source" src="img/index_BG.jpg" > 
+	</div>
+	<div id="logo">
+		<img src="img/ex1_logo.png" />
+	</div>
+	<!-- 描繪用的canvas -->
+	<div id="viewArea">
+		<canvas id="textCv"></canvas>
+	</div>
+
+</div>
+	<canvas id="mycanvas">
+		<div id="nocanvas">請以支援Canvas的瀏覽器瀏覽。</div>
+	</canvas>
+	<div id="container" style="overflow:'hidden';">
+        <main>
+            <div id="contents">
+                <ul class="tag-cloud">
+                    <li class="tag-cloud__tag-item tag-cloud__tag-item_id-1"><a href="html/Introdution.html">自我介紹</a></li>
+                    <li class="tag-cloud__tag-item tag-cloud__tag-item_id-2"><a href="html/Autobiography.html">自傳</a></li>
+                    <li class="tag-cloud__tag-item tag-cloud__tag-item_id-3"><a href="html/video.html">影音</a></li>
+                    <li class="tag-cloud__tag-item tag-cloud__tag-item_id-4"><a href="#">WebGL</a></li>
+                    <li class="tag-cloud__tag-item tag-cloud__tag-item_id-5"><a href="html/contactMe.html">聯絡我</a></li>
+                   
+                </ul>
+            <!-- /#contents --></div>
+        </main>
+    </div><!-- /#container -->
+	
+	<!--Ball2D library-->
+	<script src="lib/Box2dWeb-2.1.a.3.min.js"></script>
+    	<script src="scripts/index/FallingBall.js"></script>
+	<script type="text/javascript" src="scripts/magicText.js"></script>
+	<script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
+</body>
+</html>
