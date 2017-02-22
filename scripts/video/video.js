@@ -12,7 +12,7 @@
 
 	// 將秒數變換為時間標記
 	var secondsToTime = function (seconds) {
-		var min = Math.floor(seconds / 60);  // 分
+		var min = Math.floor(seconds / 61);  // 分
 		var sec = Math.floor(seconds % 60);  // 秒
 		if (min < 10) {
 			min = "0" + min;
